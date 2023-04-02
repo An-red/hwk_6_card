@@ -1,0 +1,122 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body{
+    background-color: #ccc;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+/* Сочетание цветов 44 */
+
+.card{
+    text-align: center;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.left{
+    width: 590px;
+    height: 490px;
+    background-image: url(../img/pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}
+
+
+.rigth{
+    background-color: #935756;
+    width: 590px;
+    height: 490px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+h2{
+    margin: 20px auto auto auto;
+    width: 450px;
+    background-color: #5D6969;
+    color: #E8BE96;
+    
+}
+.description{
+    padding: 100px 10px 100px 10px;
+    margin: 0px auto;
+    width: 430px;
+    background-color: #E88F6F;
+    vertical-align: auto;
+    color: #454e4e;
+    font-style: italic;
+    line-height: 30px;
+    box-shadow: 6px 8px 15px #111111;
+
+}
+.price{
+    color: #E88F6F;
+    font-weight: 700;
+    padding: 20px;
+    width: 200px;
+    position: relative;
+    margin: -40px;
+    background-color: #5D6969;
+    border-radius: 0px 0px 20px 0px;
+    box-shadow:  5px 5px 13px #000000,
+                -5px -5px 13px #ffffff00;
+}
+.nav{
+    margin: 80px auto auto auto;
+    background-color: #E8BE96;
+}
+.nav a{
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+    color: #000000;
+}
+.nav a:hover{
+    color: #e44b37;
+}
+
+
+@media (max-width: 600px){
+    .card{
+        max-width: 600px;
+    }
+    .left{
+        width: 380px;
+        height: 300px;
+    }
+    .rigth{
+        width: 380px;
+    }
+    .description{
+        width: 320px;
+        padding: 60px 10px 60px 10px;
+    }
+    h2{
+        width: 320px;
+        font-size: 20px;
+        padding: 0px 10px 0px 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

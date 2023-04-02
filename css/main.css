@@ -1,0 +1,171 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ccc;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+/* сочетание цветов 314 */
+
+.card {
+    background-color: #025A5B;
+    max-width: 1200px;
+    height: 512px;
+    margin: 60px auto;
+    display: flex;
+    border-radius: 57px 0px 0px 57px;
+    
+}
+
+
+.leftCard {
+    margin: 10px;
+    width: 600px;
+    height: 492px;
+    background-image: url(../img/pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: inset 20px 20px 60px #000000,
+                inset -20px -20px 60px #000000;
+    animation: lefttCard 5s infinite linear;
+}
+.leftCard:hover{
+    background-size: 200%;
+    background-position: left;
+    transition: 4s;
+}
+
+
+
+
+.rigthCard {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    width: 600px;
+    height: 492px;
+    margin: 10px;
+}
+.card .rigthCard h2{
+    text-align: center;
+    width: 570px;
+    padding: 10px;
+    font-size: 30px;
+    color: #E6984E;
+    border-radius: 15px;
+}
+.description{
+    height: 200px;
+    width: 570px;
+    padding: 20px;
+    border-radius: 15px;
+    font-style: italic;
+    background-color: #FBD594;
+    color: #025A5B;
+}
+
+
+.price {
+        align-self: start;
+        border-radius: 10px;
+        padding: 10px;
+        color: #E6984E;
+        font-size: 24px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #ccc;
+    padding: 0px 10px 0px 10px;
+}
+
+.nav a:hover{
+    color: #E6984E;
+}
+
+
+
+@media (max-width: 620px){
+    .card{
+        flex-direction: column;
+        height: 600px;
+        width: 420px;
+        border-radius: 57px 57px 0px 0px;
+    }
+    .leftCard{
+        margin: 10px;
+        width: 400px;
+        height: 280px;
+    }
+    .rigthCard{
+        margin: 10px;
+        width: 400px;
+        height: 320px;
+    }
+    .card .rigthCard h2{
+        width: 370px;
+        padding: 10px;
+
+        font-size: 20px;
+        text-align: center;
+        color: #E6984E;
+        border-radius: 15px;
+    }
+    .description{
+        height: 150px;
+        width: 370px;
+        padding: 10px;
+        border-radius: 15px;
+        font-style: italic;
+        background-color: #FBD594;
+        color: #025A5B;
+    }
+    .price{
+        padding: 10px;
+        color: #E6984E;
+        padding: 0px 0px 0px 20px;
+    }
+
+    .nav a{
+        text-decoration: none;
+        color: #ccc;
+        padding: 0px 5px 0px 5px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
